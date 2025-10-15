@@ -18,6 +18,3 @@ Cat feed:
 
 Favourites:
 ![Favourited Cats](assets/fav.png)
-
-Demo:
-![Quick demo](assets/meowr-shuggapuss.mov)

@@ -6,12 +6,13 @@ import {
   CardHeader,
   CardMedia,
   IconButton,
+  Link,
   Typography,
 } from '@mui/material';
 import { FavoriteBorder, Favorite } from '@mui/icons-material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Checkbox from '@mui/material/Checkbox';
-import { red } from '@mui/material/colors';
+import { deepPurple, red } from '@mui/material/colors';
 
 const API_KEY = import.meta.env.VITE_CAT_API_KEY;
 
@@ -64,6 +65,13 @@ export default function ImageCard({
     }
   }
 
+// there are many urls. fall back to wiki list of cat breeds.
+// cfa first (no! all of theirs are 404) then vca, vet street, wiki for breed, wiki general
+// check for an empty string in the obj or some other typo. 
+const url =
+  [breed?.vcahospitals_url, breed?.vetstreet_url, breed?.wikipedia_url].find(
+    (link) => typeof link === 'string' && link.trim() !== ''
+  ) || 'https://en.wikipedia.org/wiki/List_of_cat_breeds';
   return (
     <Card
       sx={{
@@ -83,7 +91,7 @@ export default function ImageCard({
             <Typography color='text.secondary' sx={{ fontSize: 14 }}>
               {altNames
                 ? `Also known as ${altNames}`
-                : 'No alternative names given.'}
+                : ''}
             </Typography>
           }
         />
@@ -107,6 +115,8 @@ export default function ImageCard({
           <Typography variant='body2' sx={{ color: 'text.secondary' }}>
             {`The ${name} is known for ${temperamentString}`}
           </Typography>
+          <Link sx={{color: deepPurple[800], fontSize: 14}} href={url} underline="hover" target="_blank" rel="noopener">Learn more
+</Link>
         </CardContent>
       )}
       {derivedIsFavouriteView && (
