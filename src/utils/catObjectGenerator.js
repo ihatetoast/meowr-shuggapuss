@@ -20,7 +20,7 @@ const FRIENDS_NAMES = [
   'Josh the Untrustworthy',
   'Royal Britannia Bibble Beans',
   'Jess the Mess',
-  'Princess Meowy Antoinette',
+  'Princess Meowy Antoinette'
 ];
 
 // Oh my god, stop me.

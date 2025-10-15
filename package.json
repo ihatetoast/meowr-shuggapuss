@@ -2,7 +2,7 @@
   "name": "meowr-shuggapuss",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ihatetoast/github.io/meowr-shuggapuss/",
+  "homepage": "https://ihatetoast.github.io/meowr-shuggapuss/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
