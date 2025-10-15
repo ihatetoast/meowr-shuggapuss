@@ -24,7 +24,7 @@ const CatFeed = () => {
         },
       };
       const response = await fetch(
-        'https://api.thecatapi.com/v1/images/search?limit=12&has_breeds=1',
+        'https://api.thecatapi.com/v1/images/search?limit=15&has_breeds=1',
         requestOptions
       );
       const json = await response.json();

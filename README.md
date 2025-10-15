@@ -2,23 +2,22 @@
 
 ## What
 
+Meowr is a mock dating app for people to find their next ShuggaPuss. It loads 15 cats from The Cat API and allows people to favourite them. They can see what cats they've favourited when the toggle the view. 
+
 ## Why
 
+Why TF not‽ I want to play with a free API. I also wanted to get familiar with Material UI's React components. What else? Oh, yes. I wanted to practice with local storage. No. This is absolutely a lie. I had no desire to do that, but when I saw that the favourite request returns just the image, I was bored. I wanted to create names, likes, and dislikes. Unfortunately, every change in favouriting refreshed their names. Amusing to me because I enjoyed my little creation, but I wanted the names to persist. I had a few options: go back to just images or gird my dev loins and tackle local storage. Well, slap my utils and call me Shirley, I opted for the latter. 
+
 ## How
+- The API:  [The Cat API ](https://thecatapi.com/)
+- The UI tools: [MUI Material UI's React suite of components](https://mui.com/)
+- The build tools: [Vite with React template](https://vite.dev/)
 
+Cat feed:
+![Catfeed](assets/catfeed.png)
 
+Favourites:
+![Favourited Cats](assets/fav.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Demo:
+![Quick demo](assets/meowr-shuggapuss.mov)
